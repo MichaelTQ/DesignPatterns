@@ -7,11 +7,12 @@ public class MapSetIterationTest {
 
 	public static void main(String[] args) {
 //		Map<Integer, String> map = new HashMap<Integer, String>();
-		Map<Integer, String> map = new Hashtable<Integer, String>();
+//		Map<Integer, String> map = new Hashtable<Integer, String>();
+		Map<Integer, String> map = new LinkedHashMap<Integer, String>();
 		map.put(1, "test1");
 		map.put(-103, "bc");
 		map.put(0, "tb");
-//		map.put(10, null);
+		map.put(10, null);
 		
 		System.out.println("====First Method====");
 		Set<Integer> keySet = map.keySet();
